@@ -15,7 +15,7 @@
 <meta property="og:description" content="Clean Code读书笔记序章Ga-Jal  小处诚实非小事 神在细节之中 Test Driven Development 软件架构 Scrum Agile 关注维护甚于关注生产 5S: Seiri 整理 组织 Seiton 整顿 Aplace for everything ,and everything in its place Seiso 清楚 Seiketsu 清洁 标准化 Shisuke">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-12T14:02:10.732Z">
-<meta property="article:modified_time" content="2021-06-23T00:19:59.688Z">
+<meta property="article:modified_time" content="2021-06-24T00:20:30.122Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -127,12 +127,34 @@
 <p>2.7.2 成员前缀</p>
 <p>也不必用m_前缀来表明成员变量。应当把类和函数做的足够小，消除对成员前缀的需要。</p>
 <p>2.8 避免思维映射</p>
-<p>村名程序员和准耶程序员之间的区别在于，专业程序员了解，<strong>明确是王道</strong>。专业程序员善用其能，编写其他人能理解的代码。</p>
+<p>聪明程序员和专业程序员之间的区别在于，专业程序员了解，<strong>明确是王道</strong>。专业程序员善用其能，编写其他人能理解的代码。</p>
 <p>2.12 每个概念对应一个词</p>
 <p>给每个抽象概念选一个词，并且一以贯之。</p>
 <p>对于那些会用到你代码的程序员，一以贯之的命名法简直就是天降福音。</p>
 <p>3.1 短小</p>
 <p>函数的第一规则是要短小。第二条规则是还要更短小。</p>
+<p>代码块和缩进</p>
+<p>if,else,while等语句，其中的代码块应该只有一行。该行大抵应该是一个函数调用语句。这样不但能保持函数短小，而其阿，因为快内调用的函数拥有较具说明性的名称，从而增加了文档上的价值。</p>
+<p>这也意味着函数不应该大到足以容纳嵌套结构。所以，函数的缩进层级不该多于一层或两层。这样的函数易于阅读和理解。</p>
+<p>3.2 只做一件事</p>
+<p><strong>函数应该做一件事。做好这件事。只做这一件事。</strong></p>
+<blockquote>
+<p>这些方法很好，但是项目中客户的代码往往不能动。</p>
+</blockquote>
+<p>3.3 每个函数一个抽象层级</p>
+<p>要确保函数只做一件事，函数中的语句都要在同意抽象层级上。</p>
+<p>函数中混杂不同抽象层级，往往让人迷惑。读者可能无法判断某个表达式是基础概念还是细节。更恶劣的是，就像破损的窗户，一旦细节和基础概念混杂，更多的细节就会在函数中纠结起来。</p>
+<blockquote>
+<p>深有体会</p>
+</blockquote>
+<p>单一权责原则 SRP</p>
+<p>开放闭合原则 OCP</p>
+<p>3.6 函数参数</p>
+<p>最理想的参数数量是零，应尽量避免你三参数函数。有足够特殊的理由才能用三个以上参数（多参数函数）。</p>
+<p>参数与函数命处在不同的抽象层级，它要求你了解目前并不特别重要的细节。</p>
+<p>从测试的角度看，参数甚至更叫人为难。</p>
+<p>输出参数比输入参数海妖难以理解。读函数时，我们关于认为信息通过参数输入函数，通过返回值从函数中输出。我们不太期望信息通过参数输出。所以，输出参数往往让人苦思之后才恍然大悟。</p>
+<p>​    </p>
 
       
     </div>
