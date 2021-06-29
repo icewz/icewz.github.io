@@ -151,8 +151,19 @@
 <p>最理想的参数数量是零，应尽量避免你三参数函数。有足够特殊的理由才能用三个以上参数（多参数函数）。</p>
 <p>参数与函数命处在不同的抽象层级，它要求你了解目前并不特别重要的细节。</p>
 <p>从测试的角度看，参数甚至更叫人为难。</p>
-<p>输出参数比输入参数海妖难以理解。读函数时，我们关于认为信息通过参数输入函数，通过返回值从函数中输出。我们不太期望信息通过参数输出。所以，输出参数往往让人苦思之后才恍然大悟。</p>
-<p>​    </p>
+<p>输出参数比输入参数还要难以理解。读函数时，我们关于认为信息通过参数输入函数，通过返回值从函数中输出。我们不太期望信息通过参数输出。所以，输出参数往往让人苦思之后才恍然大悟。</p>
+<p>3.6.5</p>
+<p>如果函数看来需要两个，三个或者三个以上参数，就说明其中一些参数应该封装为类了。</p>
+<p>3.7</p>
+<p>普遍而言，应避免使用输出参数。如果函数必须要修改某种状态，就修改所属对象的状态吧。</p>
+<p>3.9 使用异常替代返回错误码</p>
+<p>3.9.1 </p>
+<p>Try/Catch代码块丑陋不堪。他们搞乱了代码结构，把错误处理与政策流程混为一谈。最好把try和catch代码块的主体部分抽离出来，另外形成函数。</p>
+<p>3.9.2 错误处理就是一件事</p>
+<p>函数应该只做一件事。错误处理就是一件事。因此，处理错误的函数不该做其他事。这意味着如果关键字try在某个函数中存在，它就该是这个函数的第一个单词，而且在catch/finally代码块后面也不该有其他内容。</p>
+<p>3.10 别重复自己</p>
+<p>重复可能是软件中一切邪恶的更远。许多原则与实践规则都是为控制与消除重复而创建。例如，全部Codd数据库范式都是为消灭数据重复而服务。再想想看，卖你想对象编程是如何将代码集中到基类，从而避免了冗余。面向方面编程AOP、面向组件编程（COP）多少也都是消除重复的一种策略。看来，自子程序发明以来，软件开发领域的所有创新都是在不断尝试从源代码中消灭重复。</p>
+<p>第6章：对象和数据结构</p>
 
       
     </div>
@@ -251,9 +262,9 @@
 
 
   
-    <article id="post-哲学" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-哲学的故事" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2021/03/21/%E5%93%B2%E5%AD%A6/" class="article-date">
+    <a href="/2021/03/21/%E5%93%B2%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B/" class="article-date">
   <time datetime="2021-03-21T14:37:31.846Z" itemprop="datePublished">2021-03-21</time>
 </a>
     
@@ -265,7 +276,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/21/%E5%93%B2%E5%AD%A6/">哲学</a>
+      <a class="article-title" href="/2021/03/21/%E5%93%B2%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B/">哲学的故事</a>
     </h1>
   
 
@@ -298,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2021/03/21/%E5%93%B2%E5%AD%A6/" data-id="ckmjbj95j0001igukefapa5lz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2021/03/21/%E5%93%B2%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B/" data-id="ckqhbhcjf00005ouk4x5332ar" class="article-share-link">Share</a>
       
       
     </footer>
@@ -442,7 +453,7 @@
           </li>
         
           <li>
-            <a href="/2021/03/21/%E5%93%B2%E5%AD%A6/">哲学</a>
+            <a href="/2021/03/21/%E5%93%B2%E5%AD%A6%E7%9A%84%E6%95%85%E4%BA%8B/">哲学的故事</a>
           </li>
         
           <li>
